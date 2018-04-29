@@ -7,11 +7,8 @@
 </head>
 
 <body>
-
-<!--banner开始-->
-<div class="section-image">
 <!--头部开始-->
-<div class="header index_head clearfix">
+<div class="header clearfix">
 	<div class="main-box">
 		<div class="container">
 			<div class="logo fl">
@@ -47,28 +44,30 @@
 	</div>
 </div>
 <!--头部结束-->
+<!--banner开始-->
+<div class="section-image">
+
 	<div class="tt-overlay">
 <div class="main-box">
-	<div class="container banner" style="display: none">
+	<div class="container banner">
 		<div class="desc-sum fl">
 			<div class="slogan">优秀的性能表现</div>
 			<div class="full">Jtopcms 不仅在代码的效率上力求完美，同时在前端还采用了数据缓存、页面内容缓存、浏览器缓存多种缓存机制，使得页面的执行速度表现优秀，几乎与静态页面无异。</div>
 			
-			<button class="btn">体验前台</button>
-			<button class="btn">体验前台</button>
+			<div class="btn-box">
+				<a href="#" class="fakesubmit">PC站点</a>
+				<a href="#" class="fakesubmit">移动站点</a>
+				<a href="#" class="fakesubmit">体验后台</a>
+			
+			</div>
 			</div>
 		<div class="hero fr"><img src="images/travel-mac@2x.png" alt=""/></div>
-	<!-- <div class="action sixteen">
-		<ul>
-			<li><a href="#">体验前台</a></li>
-			<li><a href="#">体验后台</a></li>
-		</ul>
-	</div> -->
+
 	
 	</div>
 
-	<div id="blue" style="padding: 5rem 0">
-		<h1>高品质内容管理软件</h1>
+	<div id="blue" style="padding: 5rem 0; display: none;">
+		<h1>高品质内容管理软件111</h1>
 		<p>
 			<strong>性能优秀，稳定，安全，易扩展，适合建设政府，教育部门以及企事业单位的站群系统。</strong>
 			<span>JTopCMS基于JavaEE标准自主研发，是用于管理站群数字内容的内容管理软件(CMS)，能高效便捷的进行内容采编，审核，模板制作，用户交互管理以及文件，业务文档等资源的维护</span>
@@ -199,21 +198,5 @@
        	</div>
    	</div>
 </div>
-<script src="./js/jquery-1.9.1.min.js"></script>
-<script>
-	$(document).ready(function () {
-		$(window).scroll(function () {
-			var s_height = document.documentElement.scrollTop;
-			console.log(s_height);//currentTarget  delegateTarget.screen.scrollY
-
-			if (s_height > 465) {
-				$('.header').removeClass('index_head');
-			} else {
-				$('.header').addClass('index_head');
-			}
-		});
-
-	})
-</script>
 </body>
 </html>
